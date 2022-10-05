@@ -34,6 +34,10 @@ namespace AreaCalculationLibTests
 
             testTriangle = new Triangle(10.45, 12.4, 4.5);
             Assert.AreEqual(22.713636, Math.Round(testTriangle.GetArea(), 6));
+
+            //right triangle
+            testTriangle = new Triangle(12, 5, 13);
+            Assert.AreEqual(30, Math.Round(testTriangle.GetArea(), 0));
         }
     }
 
